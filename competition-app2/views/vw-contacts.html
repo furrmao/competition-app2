@@ -1,0 +1,28 @@
+
+    <div data-role="view" id="view-all-activities" data-layout="default" class="activities-view"
+         data-model="app.Tiles">
+    <h1 data-bind="text: tiles">Contacts</h1>
+    <!--<h1 data-bind="text: contacts">Contacts</h1>-->
+    <ul data-bind="source: tiles" data-template="contacts-template" data-auto-bind="false">
+
+    </ul>
+
+
+    <ul id="contacts-listview" data-role="listview" data-bind="source: tiles"
+        data-template="contacts-template-lv">
+
+    </ul>
+
+    <!--<a data-bind="click: init">click init</a>-->
+</div>
+
+<script type="text/x-kendo-template" id="contacts-template">
+    <li><span data-bind="text: name"></span></li>
+</script>
+
+<script type="text/x-kendo-template" id="contacts-template-lv">
+    <li>#: name #</li>
+</script>
+
+
+

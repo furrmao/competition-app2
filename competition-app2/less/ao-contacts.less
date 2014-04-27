@@ -1,0 +1,87 @@
+@import "ao-branding";
+
+
+
+// CONTACTS GROUPING
+// target the kendo ui list-view when grouping enabled
+#contactsListView .km-group-container {
+  background-color: blue;
+  width: 100%;
+}
+
+// target the kendo ui list-view
+#contactsListView .km-list {
+  background-color: red;
+}
+
+// target the kendo ui list-view item
+// note: this element should only be used as a container
+// note: see contactCardDetails for the contact card styles
+#contactsListView li {
+  width: 50%;
+  border:10px solid transparent;
+  float: left;
+
+}
+
+a:link { // generic link
+  color:#000000;
+  text-decoration:none;
+}
+
+a:visited { // visited link
+  color:#000000;
+  text-decoration:none;
+}   /* visited link */
+
+a:hover { // mouse over link
+  color:#000000;
+  text-decoration:none;
+}
+
+a:active { // selected link
+  color:#000000;
+  text-decoration:none;
+
+}
+
+.contactCard{
+  height: 150px;
+  border: 1px solid #808080;
+}
+
+.contactCardDetails {
+
+  > h1{ // name
+    font-size: 14px;
+    margin-top:10px;
+    margin-left:10px;
+    margin-bottom:5px;
+    margin-right:0px;
+    color: @Azure;;
+  }
+  > h2{ // job title
+    margin-top:0px;
+    margin-left:10px;
+    margin-bottom:5px;
+    margin-right:0px;
+    font-size: 12px;
+  }
+
+  font-size: 11px;
+
+  > .footer{
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+//    background-color: rgba(244, 244, 244, 0.95);
+    position: absolute;
+    bottom: 0px;
+    > .icon{
+      margin-right: 100px;
+    }
+  }
+}
+
+
+
